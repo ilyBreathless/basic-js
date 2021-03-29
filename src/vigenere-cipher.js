@@ -53,6 +53,6 @@ class VigenereCipheringMachine {
             keyIndex++
   }
     return this.isDirect ? res.split('').reverse().join('') : res
+ }
 }
-
 module.exports = VigenereCipheringMachine;
