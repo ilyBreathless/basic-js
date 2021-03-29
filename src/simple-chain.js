@@ -1,6 +1,7 @@
 
 
 const chainMaker = {
+  arr: [],
   getLength() {
     return this.arr.length
   },
