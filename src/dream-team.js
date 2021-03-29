@@ -1,4 +1,4 @@
-const CustomError = require("../extensions/custom-error");
+
 
 module.exports = function createDreamTeam(mas) {
     let resStrUns = []
