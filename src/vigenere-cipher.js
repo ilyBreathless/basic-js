@@ -1,6 +1,8 @@
+
 class VigenereCipheringMachine {
-  constructor(isDirect = false) {
-        this.isDirect = isDirect;
+  
+  constructor(direct) {
+        this.isDirect = direct === false
         this.alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     }
   encrypt(str, key) {
@@ -26,7 +28,7 @@ class VigenereCipheringMachine {
             res += encryptedLetter
             keyIndex++
         }
-        return this.isDirect ? res.split('').reverse().join('') : res;
+        return this.isDirect ? res.split('').reverse().join('') : res
   }    
   decrypt(str, key) {
         str = str.toUpperCase()
@@ -54,5 +56,6 @@ class VigenereCipheringMachine {
  }
 }
 module.exports = VigenereCipheringMachine;
+
 
 
