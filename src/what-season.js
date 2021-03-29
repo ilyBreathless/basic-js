@@ -3,7 +3,7 @@
 module.exports = function getSeason(date = 'no-value') {
   
  if (date == 'no-value') {
-        return 'Unable to determine the time of year'
+        return 'Unable to determine the time of year!'
     }
     if (date instanceof Date) {
         if (Object.prototype.toString.call(date) !== '[object Date]')
