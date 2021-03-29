@@ -9,7 +9,7 @@ module.exports = function dateSample(sampleActivity = 'no-value') {
     const sampleActivityNumeric = parseFloat(sampleActivity)
     
     if (isNaN(sampleActivityNumeric)) return false
-    if (sampleActivityNumeric > modernActivity) return false
+    if (sampleActivityNumeric > MODERN_ACTIVITIY) return false
     if (sampleActivityNumeric == 0 || sampleActivityNumeric < 0) return false
   
     const k = Math.LN2 / HALF_LIFE_PERIOD
